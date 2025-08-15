@@ -65,15 +65,6 @@
     </style>
 </head>
 <body class="text-gray-800">
-    <!-- 
-    Chosen Color Palette: Brilliant Blues
-    Lightest Blue (BG): #E0F7FA
-    Light Blue: #B2EBF2
-    Medium Blue: #4DD0E1
-    Teal: #00ACC1
-    Dark Teal: #00838F
-    Darkest Teal (Text): #006064
-    -->
     <nav class="sticky top-0 bg-white/80 backdrop-blur-md shadow-md z-50">
         <div class="container mx-auto px-4">
             <div class="flex justify-center items-center h-16 space-x-3 md:space-x-6">
@@ -324,20 +315,17 @@
                 const prompt = `You are an English teacher evaluating a student's attempt to turn a direct question into a polite, indirect question. The original direct question was: "${currentQuestion.question}". The student wrote: "${userAnswerText}". Analyze the student's answer. Is it grammatically correct? Does it successfully form an indirect question? Provide feedback in 2-3 sentences. Start by saying if they are "Correct!", "Mostly correct!", or "Incorrect." Then, provide a brief explanation and one correct example. Keep the tone friendly and encouraging.`;
                 
                 try {
-                    let chatHistory = [];
-                    chatHistory.push({ role: "user", parts: [{ text: prompt }] });
-                    const payload = { contents: chatHistory };
-                    const apiKey = ""; // API key will be injected by the environment
-                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+                    // This is the new endpoint for our serverless function
+                    const functionUrl = '/.netlify/functions/get-feedback';
                     
-                    const response = await fetch(apiUrl, {
+                    const response = await fetch(functionUrl, {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload)
+                        body: JSON.stringify({ prompt: prompt }) // Send the prompt in the body
                     });
 
                     if (!response.ok) {
-                        throw new Error(`API error: ${response.statusText}`);
+                        throw new Error(`Function error: ${response.statusText}`);
                     }
 
                     const result = await response.json();
@@ -348,14 +336,20 @@
                         const text = result.candidates[0].content.parts[0].text;
                         feedbackText.textContent = text;
                     } else {
-                        throw new Error("Invalid response structure from API.");
+                        // Handle cases where the API returns a valid response but no content, e.g., safety blocks
+                        if (result.candidates && result.candidates.length > 0) {
+                             feedbackText.textContent = "The model returned an empty response. This might be due to safety filters. Please try rephrasing your question.";
+                        } else {
+                            throw new Error("Invalid response structure from function.");
+                        }
                     }
                 } catch (error) {
                     console.error("Error fetching AI feedback:", error);
-                    feedbackText.textContent = "Sorry, I couldn't get feedback right now. Please try again later.";
+                    feedbackText.textContent = "Sorry, I couldn't get feedback right now. Please check the console for errors and ensure the serverless function is deployed correctly.";
                 } finally {
                     feedbackLoader.style.display = 'none';
                     feedbackText.style.display = 'block';
+                    checkAnswerBtn.disabled = false;
                 }
             }
 
