@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art of Asking Politely: An Infographic Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #E0F7FA; 
+            scroll-behavior: smooth;
+        }
+        .nav-link {
+            transition: color 0.3s, border-color 0.3s;
+        }
+        .nav-link.active {
+            color: #00ACC1;
+            border-bottom-color: #00ACC1;
+        }
+        .loader {
+            width: 24px;
+            height: 24px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #00ACC1;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .tense-btn.active {
+            background-color: #006064;
+            color: white;
+        }
+        .practice-btn {
+            background-color: #00ACC1;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .practice-btn:hover {
+            background-color: #00838F;
+        }
+        .practice-btn:disabled {
+            background-color: #B2EBF2;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- 
+    Chosen Color Palette: Brilliant Blues
+    Lightest Blue (BG): #E0F7FA
+    Light Blue: #B2EBF2
+    Medium Blue: #4DD0E1
+    Teal: #00ACC1
+    Dark Teal: #00838F
+    Darkest Teal (Text): #006064
+    -->
+    <nav class="sticky top-0 bg-white/80 backdrop-blur-md shadow-md z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-center items-center h-16 space-x-3 md:space-x-6">
+                <a href="#why" class="nav-link text-gray-600 hover:text-[#00ACC1] font-bold border-b-2 border-transparent pb-1 text-sm md:text-base">Why?</a>
+                <a href="#how" class="nav-link text-gray-600 hover:text-[#00ACC1] font-bold border-b-2 border-transparent pb-1 text-sm md:text-base">Formula</a>
+                <a href="#rules" class="nav-link text-gray-600 hover:text-[#00ACC1] font-bold border-b-2 border-transparent pb-1 text-sm md:text-base">Rules</a>
+                <a href="#tenses" class="nav-link text-gray-600 hover:text-[#00ACC1] font-bold border-b-2 border-transparent pb-1 text-sm md:text-base">Tenses</a>
+                <a href="#watch" class="nav-link text-gray-600 hover:text-[#00ACC1] font-bold border-b-2 border-transparent pb-1 text-sm md:text-base">Watch</a>
+                <a href="#practice" class="nav-link text-gray-600 hover:text-[#00ACC1] font-bold border-b-2 border-transparent pb-1 text-sm md:text-base">Practice</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center my-12">
+            <h1 class="text-4xl md:text-6xl font-black" style="color: #006064;">The Art of Asking Politely</h1>
+            <h2 class="text-2xl md:text-3xl font-bold mt-4" style="color: #00838F;">Unit 4: Language In Use</h2>
+            <p class="mt-4 text-lg max-w-3xl mx-auto" style="color: #00838F;">A visual guide to mastering indirect questions for smoother conversations.</p>
+        </header>
+
+        <main class="space-y-20">
+
+            <section id="why">
+                <h2 class="text-3xl font-bold text-center mb-10" style="color: #006064;">When Should You Use an Indirect Question?</h2>
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <p class="text-center mb-8">Indirect questions soften your language, making you sound more respectful and less demanding. They are your best tool in specific social situations.</p>
+                    <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+                        <div class="p-4 bg-[#E0F7FA] rounded-lg text-center font-bold" style="color: #00838F;">Are you talking to a friend?</div>
+                        <div class="text-2xl font-bold" style="color: #00ACC1;">→</div>
+                        <div class="p-4 bg-[#B2EBF2] rounded-lg text-center">
+                            <span class="font-bold" style="color: #00838F;">YES</span><br>
+                            <span class="text-sm">Direct Question is OK!</span>
+                        </div>
+                        <div class="text-2xl font-bold" style="color: #00ACC1;">→</div>
+                         <div class="p-4 bg-[#B2EBF2] rounded-lg text-center">
+                            <span class="font-bold" style="color: #00838F;">NO</span><br>
+                             <span class="text-sm">Consider an Indirect Question if...</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-center my-4">
+                        <div class="text-2xl font-bold" style="color: #00ACC1;">↓</div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+                        <div class="p-4 bg-white border-2 border-dashed rounded-lg" style="border-color: #4DD0E1;">
+                            <h3 class="font-bold" style="color: #006064;">It's a Formal Situation</h3>
+                            <p class="text-sm"> (Teacher, Boss)</p>
+                        </div>
+                        <div class="p-4 bg-white border-2 border-dashed rounded-lg" style="border-color: #4DD0E1;">
+                            <h3 class="font-bold" style="color: #006064;">You're Talking to a Stranger</h3>
+                             <p class="text-sm">(Asking for directions)</p>
+                        </div>
+                        <div class="p-4 bg-white border-2 border-dashed rounded-lg" style="border-color: #4DD0E1;">
+                            <h3 class="font-bold" style="color: #006064;">You're Making a Request</h3>
+                             <p class="text-sm">(Asking for a favor)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="how">
+                <h2 class="text-3xl font-bold text-center mb-10" style="color: #006064;">The 2-Step Formula</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-8 text-center">
+                        <div class="text-6xl font-black" style="color: #00ACC1;">1</div>
+                        <h3 class="text-2xl font-bold mt-4" style="color: #00838F;">Start with a Polite Opener</h3>
+                        <p class="mt-2">Always begin your question with a soft introductory phrase.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-8 text-center">
+                        <div class="text-6xl font-black" style="color: #00ACC1;">2</div>
+                        <h3 class="text-2xl font-bold mt-4" style="color: #00838F;">Use Statement Word Order</h3>
+                        <p class="mt-2">The rest of your sentence must follow the structure of a normal statement (Subject + Verb), not a question.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="rules">
+                <h2 class="text-3xl font-bold text-center mb-10" style="color: #006064;">The Rules in Action</h2>
+                <div class="space-y-8">
+                    <div class="bg-white rounded-lg shadow-md p-8">
+                        <h3 class="text-2xl font-bold mb-4" style="color: #00838F;">Rule A: For "Wh-" Questions</h3>
+                        <p class="mb-6">For questions starting with who, what, where, when, why, or how, the verb moves to the end of the sentence, after the subject.</p>
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <p class="font-bold">Direct: <span class="p-1 rounded" style="background-color: #B2EBF2;">Where</span> <span class="p-1 rounded bg-red-200">is</span> <span class="p-1 rounded bg-green-200">the library</span>?</p>
+                            <div class="text-2xl my-2 text-center" style="color: #00ACC1;">↓</div>
+                            <p class="font-bold">Indirect: Could you tell me <span class="p-1 rounded" style="background-color: #B2EBF2;">where</span> <span class="p-1 rounded bg-green-200">the library</span> <span class="p-1 rounded bg-red-200">is</span>?</p>
+                        </div>
+                         <div class="p-4 bg-gray-50 rounded-lg mt-4">
+                            <p class="font-bold">Direct: What time <span class="p-1 rounded bg-red-200">does</span> <span class="p-1 rounded bg-green-200">the train</span> <span class="p-1 rounded bg-yellow-200">leave</span>?</p>
+                            <div class="text-2xl my-2 text-center" style="color: #00ACC1;">↓</div>
+                            <p class="font-bold">Indirect: Do you know what time <span class="p-1 rounded bg-green-200">the train</span> <span class="p-1 rounded bg-yellow-200">leaves</span>?</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-8">
+                        <h3 class="text-2xl font-bold mb-4" style="color: #00838F;">Rule B: For "Yes/No" Questions</h3>
+                        <p class="mb-6">For questions that can be answered with yes or no, add "if" or "whether" and change the word order to a normal statement. Remove helping verbs like `do`, `does`, or `did`.</p>
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <p class="font-bold">Direct: <span class="p-1 rounded bg-red-200">Do</span> <span class="p-1 rounded bg-green-200">you</span> <span class="p-1 rounded bg-yellow-200">sell</span> vintage phones?</p>
+                            <div class="text-2xl my-2 text-center" style="color: #00ACC1;">↓</div>
+                            <p class="font-bold">Indirect: Could you tell me <span class="p-1 rounded" style="background-color: #B2EBF2;">if</span> <span class="p-1 rounded bg-green-200">you</span> <span class="p-1 rounded bg-yellow-200">sell</span> vintage phones?</p>
+                        </div>
+                         <div class="p-4 bg-gray-50 rounded-lg mt-4">
+                            <p class="font-bold">Direct: <span class="p-1 rounded bg-red-200">Did</span> <span class="p-1 rounded bg-green-200">they</span> <span class="p-1 rounded bg-yellow-200">receive</span> the email?</p>
+                            <div class="text-2xl my-2 text-center" style="color: #00ACC1;">↓</div>
+                            <p class="font-bold">Indirect: Do you know <span class="p-1 rounded" style="background-color: #B2EBF2;">if</span> <span class="p-1 rounded bg-green-200">they</span> <span class="p-1 rounded bg-yellow-200">received</span> the email?</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tenses">
+                <h2 class="text-3xl font-bold text-center mb-10" style="color: #006064;">Tense Transformation Chart</h2>
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <p class="text-center mb-6 max-w-2xl mx-auto">The core rule of using statement word order applies to all tenses. Click the buttons below to see how direct questions change into indirect questions in different tenses.</p>
+                    <div id="tense-buttons" class="flex flex-wrap justify-center gap-2 md:gap-4 mb-6">
+                        <button class="tense-btn bg-gray-200 hover:bg-gray-300 font-bold py-2 px-4 rounded-full transition" data-tense="present-simple">Present Simple</button>
+                        <button class="tense-btn bg-gray-200 hover:bg-gray-300 font-bold py-2 px-4 rounded-full transition" data-tense="past-simple">Past Simple</button>
+                        <button class="tense-btn bg-gray-200 hover:bg-gray-300 font-bold py-2 px-4 rounded-full transition" data-tense="present-continuous">Present Continuous</button>
+                        <button class="tense-btn bg-gray-200 hover:bg-gray-300 font-bold py-2 px-4 rounded-full transition" data-tense="past-continuous">Past Continuous</button>
+                        <button class="tense-btn bg-gray-200 hover:bg-gray-300 font-bold py-2 px-4 rounded-full transition" data-tense="present-perfect">Present Perfect</button>
+                        <button class="tense-btn bg-gray-200 hover:bg-gray-300 font-bold py-2 px-4 rounded-full transition" data-tense="future-will">Future with "will"</button>
+                        <button class="tense-btn bg-gray-200 hover:bg-gray-300 font-bold py-2 px-4 rounded-full transition" data-tense="modal-can">Modal "can"</button>
+                    </div>
+                    <div id="tense-display" class="p-6 bg-gray-50 rounded-lg min-h-[220px]">
+                        <p class="text-center text-gray-500">Select a tense to see the examples.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="watch">
+                <h2 class="text-3xl font-bold text-center mb-10" style="color: #006064;">Watch It in Action</h2>
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <p class="text-center mb-6 max-w-2xl mx-auto">In this clip from *Spider-Man: No Way Home*, Peter Parker (a teenager) needs a huge favor from Doctor Strange (a powerful adult). Notice how he uses polite, indirect language to make his difficult request.</p>
+                    <div class="video-container rounded-lg overflow-hidden shadow-lg">
+                        <iframe src="https://www.youtube.com/embed/DOjikQt2zQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="practice">
+                <h2 class="text-3xl font-bold text-center mb-10" style="color: #006064;">✨ Practice Your Politeness</h2>
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <p class="text-center mb-6">Test your skills! Get a random scenario and rewrite the direct question to be more polite. Then, get instant feedback from our AI teacher.</p>
+                    <div class="max-w-2xl mx-auto">
+                        <div id="practice-card" class="bg-gray-50 p-6 rounded-lg shadow-inner">
+                            <p class="font-bold" style="color: #00838F;">Your Scenario:</p>
+                            <p class="mb-4">You are in a new city and need to find the train station.</p>
+                            <p class="font-bold" style="color: #00838F;">Direct Question:</p>
+                            <p id="direct-question-text" class="mb-4 font-mono p-2 bg-gray-200 rounded">Where is the train station?</p>
+                            
+                            <label for="user-answer" class="font-bold block mb-2" style="color: #00838F;">Your Polite Question:</label>
+                            <textarea id="user-answer" rows="3" class="w-full p-2 border rounded-md focus:ring-2 focus:ring-[#00ACC1] focus:border-transparent" placeholder="Could you tell me..."></textarea>
+                        </div>
+
+                        <div class="text-center my-4">
+                            <button id="check-answer-btn" class="practice-btn font-bold py-2 px-6 rounded-full">Check My Answer</button>
+                            <button id="new-question-btn" class="ml-4 text-gray-600 hover:text-black font-bold py-2 px-6 rounded-full bg-gray-200 hover:bg-gray-300 transition">Get New Question</button>
+                        </div>
+
+                        <div id="feedback-container" class="mt-6 p-4 rounded-lg bg-[#E0F7FA] border border-[#4DD0E1]" style="display: none;">
+                            <h4 class="font-bold text-lg mb-2" style="color: #006064;">Feedback:</h4>
+                            <div id="feedback-loader" class="flex justify-center items-center h-16">
+                                <div class="loader"></div>
+                            </div>
+                            <p id="feedback-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- TENSE CHART LOGIC ---
+            const tenseData = {
+                'present-simple': { wh: { direct: `What time <span class="p-1 rounded bg-red-200">does</span> <span class="p-1 rounded bg-green-200">the meeting</span> <span class="p-1 rounded bg-yellow-200">start</span>?`, indirect: `Do you know what time <span class="p-1 rounded bg-green-200">the meeting</span> <span class="p-1 rounded bg-yellow-200">starts</span>?` }, yn: { direct: `<span class="p-1 rounded bg-red-200">Do</span> <span class="p-1 rounded bg-green-200">they</span> <span class="p-1 rounded bg-yellow-200">live</span> here?`, indirect: `I was wondering <span class="p-1 rounded" style="background-color: #B2EBF2;">if</span> <span class="p-1 rounded bg-green-200">they</span> <span class="p-1 rounded bg-yellow-200">live</span> here.` } },
+                'past-simple': { wh: { direct: `Where <span class="p-1 rounded bg-red-200">did</span> <span class="p-1 rounded bg-green-200">you</span> <span class="p-1 rounded bg-yellow-200">go</span> yesterday?`, indirect: `Could you tell me where <span class="p-1 rounded bg-green-200">you</span> <span class="p-1 rounded bg-yellow-200">went</span> yesterday?` }, yn: { direct: `<span class="p-1 rounded bg-red-200">Did</span> <span class="p-1 rounded bg-green-200">she</span> <span class="p-1 rounded bg-yellow-200">call</span>?`, indirect: `Do you know <span class="p-1 rounded" style="background-color: #B2EBF2;">if</span> <span class="p-1 rounded bg-green-200">she</span> <span class="p-1 rounded bg-yellow-200">called</span>?` } },
+                'present-continuous': { wh: { direct: `What <span class="p-1 rounded bg-red-200">is</span> <span class="p-1 rounded bg-green-200">she</span> <span class="p-1 rounded bg-yellow-200">working on</span>?`, indirect: `I was wondering what <span class="p-1 rounded bg-green-200">she</span> <span class="p-1 rounded bg-red-200">is</span> <span class="p-1 rounded bg-yellow-200">working on</span>.` }, yn: { direct: `<span class="p-1 rounded bg-red-200">Are</span> <span class="p-1 rounded bg-green-200">they</span> <span class="p-1 rounded bg-yellow-200">coming</span>?`, indirect: `Could you tell me <span class="p-1 rounded" style="background-color: #B2EBF2;">if</span> <span class="p-1 rounded bg-green-200">they</span> <span class="p-1 rounded bg-red-200">are</span> <span class="p-1 rounded bg-yellow-200">coming</span>?` } },
+                'past-continuous': { wh: { direct: `Why <span class="p-1 rounded bg-red-200">was</span> <span class="p-1 rounded bg-green-200">he</span> <span class="p-1 rounded bg-yellow-200">shouting</span>?`, indirect: `Do you have any idea why <span class="p-1 rounded bg-green-200">he</span> <span class="p-1 rounded bg-red-200">was</span> <span class="p-1 rounded bg-yellow-200">shouting</span>?` }, yn: { direct: `<span class="p-1 rounded bg-red-200">Was</span> <span class="p-1 rounded bg-green-200">it</span> <span class="p-1 rounded bg-yellow-200">raining</span>?`, indirect: `I'd like to know <span class="p-1 rounded" style="background-color: #B2EBF2;">if</span> <span class="p-1 rounded bg-green-200">it</span> <span class="p-1 rounded bg-red-200">was</span> <span class="p-1 rounded bg-yellow-200">raining</span>.` } },
+                'present-perfect': { wh: { direct: `How long <span class="p-1 rounded bg-red-200">have</span> <span class="p-1 rounded bg-green-200">you</span> <span class="p-1 rounded bg-yellow-200">worked</span> here?`, indirect: `Could you tell me how long <span class="p-1 rounded bg-green-200">you</span> <span class="p-1 rounded bg-red-200">have</span> <span class="p-1 rounded bg-yellow-200">worked</span> here?` }, yn: { direct: `<span class="p-1 rounded bg-red-200">Has</span> <span class="p-1 rounded bg-green-200">the package</span> <span class="p-1 rounded bg-yellow-200">arrived</span>?`, indirect: `Do you know <span class="p-1 rounded" style="background-color: #B2EBF2;">if</span> <span class="p-1 rounded bg-green-200">the package</span> <span class="p-1 rounded bg-red-200">has</span> <span class="p-1 rounded bg-yellow-200">arrived</span>?` } },
+                'future-will': { wh: { direct: `When <span class="p-1 rounded bg-red-200">will</span> <span class="p-1 rounded bg-green-200">the results</span> <span class="p-1 rounded bg-yellow-200">be</span> announced?`, indirect: `Do you have any idea when <span class="p-1 rounded bg-green-200">the results</span> <span class="p-1 rounded bg-red-200">will</span> <span class="p-1 rounded bg-yellow-200">be</span> announced?` }, yn: { direct: `<span class="p-1 rounded bg-red-200">Will</span> <span class="p-1 rounded bg-green-200">you</span> <span class="p-1 rounded bg-yellow-200">be</span> there?`, indirect: `I was wondering <span class="p-1 rounded" style="background-color: #B2EBF2;">if</span> <span class="p-1 rounded bg-green-200">you</span> <span class="p-1 rounded bg-red-200">will</span> <span class="p-1 rounded bg-yellow-200">be</span> there.` } },
+                'modal-can': { wh: { direct: `Where <span class="p-1 rounded bg-red-200">can</span> <span class="p-1 rounded bg-green-200">I</span> <span class="p-1 rounded bg-yellow-200">buy</span> a ticket?`, indirect: `Could you tell me where <span class="p-1 rounded bg-green-200">I</span> <span class="p-1 rounded bg-red-200">can</span> <span class="p-1 rounded bg-yellow-200">buy</span> a ticket?` }, yn: { direct: `<span class="p-1 rounded bg-red-200">Can</span> <span class="p-1 rounded bg-green-200">you</span> <span class="p-1 rounded bg-yellow-200">help</span> me?`, indirect: `I was wondering <span class="p-1 rounded" style="background-color: #B2EBF2;">if</span> <span class="p-1 rounded bg-green-200">you</span> <span class="p-1 rounded bg-red-200">can</span> <span class="p-1 rounded bg-yellow-200">help</span> me.` } }
+            };
+
+            const tenseButtonsContainer = document.getElementById('tense-buttons');
+            const tenseDisplay = document.getElementById('tense-display');
+
+            tenseButtonsContainer.addEventListener('click', (e) => {
+                if (e.target.classList.contains('tense-btn')) {
+                    const tense = e.target.dataset.tense;
+                    const data = tenseData[tense];
+                    document.querySelectorAll('.tense-btn').forEach(btn => btn.classList.remove('active'));
+                    e.target.classList.add('active');
+                    tenseDisplay.innerHTML = `<div class="space-y-4"><div><h4 class="font-bold text-lg mb-2" style="color: #00838F;">"Wh-" Question Example:</h4><div class="p-4 rounded-lg bg-gray-100"><p class="font-bold">Direct: ${data.wh.direct}</p><div class="text-2xl my-2 text-center" style="color: #00ACC1;">↓</div><p class="font-bold">Indirect: ${data.wh.indirect}</p></div></div><div><h4 class="font-bold text-lg mb-2" style="color: #00838F;">"Yes/No" Question Example:</h4><div class="p-4 rounded-lg bg-gray-100"><p class="font-bold">Direct: ${data.yn.direct}</p><div class="text-2xl my-2 text-center" style="color: #00ACC1;">↓</div><p class="font-bold">Indirect: ${data.yn.indirect}</p></div></div></div>`;
+                }
+            });
+
+            // --- PRACTICE QUIZ LOGIC ---
+            const practiceQuestions = [
+                { scenario: "You are in a library and want to know what time it closes.", question: "What time do you close?" },
+                { scenario: "You need to ask your colleague for help with a project.", question: "Can you help me?" },
+                { scenario: "You are talking to a shop assistant and want to know if they have a specific item.", question: "Do you have this in a size Medium?" },
+                { scenario: "You missed the meeting and are asking your boss what was decided.", question: "What did I miss in the meeting?" },
+                { scenario: "You want to ask a stranger for the time.", question: "What time is it?" },
+                { scenario: "You need to know if your friend has finished using the computer.", question: "Are you finished with the computer?" }
+            ];
+
+            const directQuestionText = document.getElementById('direct-question-text');
+            const userAnswer = document.getElementById('user-answer');
+            const checkAnswerBtn = document.getElementById('check-answer-btn');
+            const newQuestionBtn = document.getElementById('new-question-btn');
+            const feedbackContainer = document.getElementById('feedback-container');
+            const feedbackText = document.getElementById('feedback-text');
+            const feedbackLoader = document.getElementById('feedback-loader');
+            const practiceCard = document.getElementById('practice-card');
+
+            let currentQuestion = practiceQuestions[0];
+
+            function getNewQuestion() {
+                const randomIndex = Math.floor(Math.random() * practiceQuestions.length);
+                currentQuestion = practiceQuestions[randomIndex];
+                
+                practiceCard.querySelector('p:nth-of-type(1)').textContent = currentQuestion.scenario;
+                directQuestionText.textContent = currentQuestion.question;
+                
+                userAnswer.value = '';
+                feedbackContainer.style.display = 'none';
+                feedbackText.textContent = '';
+                checkAnswerBtn.disabled = false;
+            }
+
+            async function checkAnswer() {
+                const userAnswerText = userAnswer.value.trim();
+                if (!userAnswerText) {
+                    feedbackText.textContent = "Please write your polite question in the box before checking.";
+                    feedbackContainer.style.display = 'block';
+                    feedbackLoader.style.display = 'none';
+                    return;
+                }
+
+                feedbackContainer.style.display = 'block';
+                feedbackLoader.style.display = 'flex';
+                feedbackText.style.display = 'none';
+                checkAnswerBtn.disabled = true;
+
+                const prompt = `You are an English teacher evaluating a student's attempt to turn a direct question into a polite, indirect question. The original direct question was: "${currentQuestion.question}". The student wrote: "${userAnswerText}". Analyze the student's answer. Is it grammatically correct? Does it successfully form an indirect question? Provide feedback in 2-3 sentences. Start by saying if they are "Correct!", "Mostly correct!", or "Incorrect." Then, provide a brief explanation and one correct example. Keep the tone friendly and encouraging.`;
+                
+                try {
+                    let chatHistory = [];
+                    chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+                    const payload = { contents: chatHistory };
+                    const apiKey = ""; // API key will be injected by the environment
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+                    
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`API error: ${response.statusText}`);
+                    }
+
+                    const result = await response.json();
+                    
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        const text = result.candidates[0].content.parts[0].text;
+                        feedbackText.textContent = text;
+                    } else {
+                        throw new Error("Invalid response structure from API.");
+                    }
+                } catch (error) {
+                    console.error("Error fetching AI feedback:", error);
+                    feedbackText.textContent = "Sorry, I couldn't get feedback right now. Please try again later.";
+                } finally {
+                    feedbackLoader.style.display = 'none';
+                    feedbackText.style.display = 'block';
+                }
+            }
+
+            newQuestionBtn.addEventListener('click', getNewQuestion);
+            checkAnswerBtn.addEventListener('click', checkAnswer);
+
+            // Initialize with the first question
+            getNewQuestion();
+        });
+    </script>
+</body>
+</html>
